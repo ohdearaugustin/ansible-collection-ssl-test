@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Ansible Collection
-.tar.gz
+*.tar.gz
