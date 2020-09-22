@@ -72,8 +72,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ohdearaugustin-test_ssl-${{ steps.cversion.outputs.version }}.tar.gz
-          asset_name: ohdearaugustin-test_ssl-${{ steps.cversion.outputs.version }}.tar.gz
+          asset_path: ohdearaugustin-ssl_test-${{ steps.cversion.outputs.version }}.tar.gz
+          asset_name: ohdearaugustin-ssl_test-${{ steps.cversion.outputs.version }}.tar.gz
           asset_content_type: application/tar+gzip
 
       - name: Deploy Ansible collection to Galaxy
